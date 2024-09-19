@@ -36,6 +36,8 @@ body{
     height: auto;
 }
 section{
+    overflow: auto;
+    min-height: 65vh;
     margin: 4rem 6rem;
 }
 h1{
@@ -43,12 +45,54 @@ h1{
 }
 h2{
     font-size: 4rem;
+    margin-bottom: 1rem;
 }
 p{
     font-size: 2rem;
 }
 
-
+.section2 h2,.section3 h2{
+    font-size: 3rem;
+}
+.section2 ul{
+    list-style: none;
+}
+.section2 li{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+form{
+    margin: 6rem auto;
+    border:none;
+    padding-left: 20px;
+    background-color: white;
+    height: 9vh;
+    max-width:600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3rem;
+}
+input{
+    width: 70%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+button{
+    font-size: 20px;
+    padding: 5px 10px;
+    height: 100%;
+    width: auto;
+    border-radius: 3rem;
+    border: none;
+    background-color: red;
+    color: var(--white);
+}
+.section3{
+    height: 50vh;
+    margin-top:7rem;
+}
 @media (max-width: 768px){
     .nav button{
         padding: 0.4rem 0.8rem;
@@ -77,5 +121,36 @@ p{
     p{
         text-align: center;
         font-size: 1.2rem;
+    }
+    .section2 h2,.section3 h2{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .section2 li{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+    }
+    form{
+        margin: 6rem auto;
+        border:none;
+        padding-left: 20px;
+        background-color: white;
+        height: 6vh;
+        max-width:350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 3rem;
+    }
+    button{
+        font-size: 10px;
+    }
+    input{
+        font-size: 10px;
+    }
+    .section3{
+        margin-top:4rem;
+        height: 10vh;
     }
 }
